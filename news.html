@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates | Eswatini Judiciary</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <a href="mailto:info@judiciary.org.sz"><i class="fas fa-envelope"></i> info@judiciary.org.sz</a>
+                <a href="tel:+26824042968"><i class="fas fa-phone-alt"></i> +268 2404 2968</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>ESWATINI<span>JUDICIARY</span></h1>
+                </a>
+            </div>
+            <nav>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html">About us <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html#vision">Vision and Mission</a></li>
+                            <li><a href="about.html#power">Judicial Power</a></li>
+                            <li><a href="about.html#structure">Judiciary Structure</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="jsc.html">JSC</a></li>
+                    <li class="dropdown">
+                        <a href="courts.html">Our Courts <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="high-court.html">High Court</a></li>
+                            <li><a href="supreme-court.html">Supreme Court</a></li>
+                            <li><a href="magistrate-courts.html">Magistrate Courts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="master.html">Master of the High Court</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Featured News Section -->
+    <section class="featured-news-section">
+        <div class="container">
+            <div class="featured-news-slider">
+                <div class="featured-slide active">
+                    <div class="featured-image">
+                        <img src="/api/placeholder/1200/600" alt="Chief Justice addresses judiciary modernization">
+                        <div class="featured-overlay"></div>
+                    </div>
+                    <div class="featured-content">
+                        <div class="featured-category">Announcements</div>
+                        <h2>Chief Justice Unveils Five-Year Judiciary Modernization Plan</h2>
+                        <p class="featured-excerpt">The comprehensive initiative aims to digitize court processes, reduce case backlog, and improve access to justice across Eswatini.</p>
+                        <div class="featured-meta">
+                            <span class="featured-date"><i class="far fa-calendar-alt"></i> February 15, 2025</span>
+                            <a href="news-detail.html" class="btn featured-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="featured-controls">
+                    <button class="featured-prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+                    <div class="featured-indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                    </div>
+                    <button class="featured-next" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Filter Section -->
+    <section class="news-filter-section">
+        <div class="container">
+            <div class="filter-header">
+                <h3>Latest News & Updates</h3>
+                <div class="search-container">
+                    <form id="search-form">
+                        <input type="text" id="news-search" placeholder="Search news...">
+                        <button type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="filter-categories">
+                <button class="category-filter active" data-category="all">All</button>
+                <button class="category-filter" data-category="announcements">Announcements</button>
+                <button class="category-filter" data-category="court-rulings">Court Rulings</button>
+                <button class="category-filter" data-category="press-releases">Press Releases</button>
+                <button class="category-filter" data-category="events">Events</button>
+                <button class="category-filter" data-category="appointments">Appointments</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Feed Section -->
+    <section class="news-feed-section">
+        <div class="container">
+            <div class="news-grid">
+                <!-- News Card 1 -->
+                <div class="news-card" data-category="press-releases">
+                    <div class="news-image">
+                        <img src="/api/placeholder/600/400" alt="Supreme Court rules on constitutional case">
+                        <div class="news-category">Press Releases</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>Supreme Court Rules on Landmark Constitutional Case</h4>
+                        <p class="news-excerpt">In a unanimous decision, the Supreme Court has established new precedent regarding interpretation of Section 28 of the Constitution.</p>
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> February 12, 2025</span>
+                            <span class="news-views"><i class="far fa-eye"></i> 342</span>
+                        </div>
+                        <div class="news-footer">
+                            <a href="news-detail.html" class="news-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="news-share">
+                                <button class="share-toggle" aria-label="Share"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-dropdown">
+                                    <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" aria-label="Share via Email"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 2 -->
+                <div class="news-card" data-category="appointments">
+                    <div class="news-image">
+                        <img src="/api/placeholder/600/400" alt="New judges appointed">
+                        <div class="news-category">Appointments</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>Three New Judges Appointed to the High Court</h4>
+                        <p class="news-excerpt">His Majesty has approved the appointments recommended by the Judicial Service Commission to strengthen the judiciary.</p>
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> February 10, 2025</span>
+                            <span class="news-views"><i class="far fa-eye"></i> 287</span>
+                        </div>
+                        <div class="news-footer">
+                            <a href="news-detail.html" class="news-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="news-share">
+                                <button class="share-toggle" aria-label="Share"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-dropdown">
+                                    <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" aria-label="Share via Email"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 3 -->
+                <div class="news-card" data-category="announcements">
+                    <div class="news-image">
+                        <img src="/api/placeholder/600/400" alt="E-filing system launch">
+                        <div class="news-category">Announcements</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>E-Filing System to Launch Next Month in High Court</h4>
+                        <p class="news-excerpt">The new digital system will allow legal practitioners to file documents electronically, improving efficiency and reducing paper usage.</p>
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> February 8, 2025</span>
+                            <span class="news-views"><i class="far fa-eye"></i> 231</span>
+                        </div>
+                        <div class="news-footer">
+                            <a href="news-detail.html" class="news-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="news-share">
+                                <button class="share-toggle" aria-label="Share"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-dropdown">
+                                    <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" aria-label="Share via Email"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 4 -->
+                <div class="news-card" data-category="court-rulings">
+                    <div class="news-image">
+                        <img src="/api/placeholder/600/400" alt="Commercial court ruling">
+                        <div class="news-category">Court Rulings</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>High Court Issues Ruling on Major Commercial Dispute</h4>
+                        <p class="news-excerpt">The ruling clarifies important principles regarding commercial contracts and foreign investment protections in Eswatini.</p>
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> February 5, 2025</span>
+                            <span class="news-views"><i class="far fa-eye"></i> 198</span>
+                        </div>
+                        <div class="news-footer">
+                            <a href="news-detail.html" class="news-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="news-share">
+                                <button class="share-toggle" aria-label="Share"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-dropdown">
+                                    <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" aria-label="Share via Email"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 5 -->
+                <div class="news-card" data-category="events">
+                    <div class="news-image">
+                        <img src="/api/placeholder/600/400" alt="Judicial conference">
+                        <div class="news-category">Events</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>Annual Judicial Conference to Focus on Technology and Access to Justice</h4>
+                        <p class="news-excerpt">The three-day conference will bring together judges, magistrates, and legal experts to discuss judicial innovation.</p>
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> February 1, 2025</span>
+                            <span class="news-views"><i class="far fa-eye"></i> 175</span>
+                        </div>
+                        <div class="news-footer">
+                            <a href="news-detail.html" class="news-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="news-share">
+                                <button class="share-toggle" aria-label="Share"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-dropdown">
+                                    <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" aria-label="Share via Email"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 6 -->
+                <div class="news-card" data-category="press-releases">
+                    <div class="news-image">
+                        <img src="/api/placeholder/600/400" alt="Justice system improvements">
+                        <div class="news-category">Press Releases</div>
+                    </div>
+                    <div class="news-content">
+                        <h4>Judiciary Reports 30% Reduction in Case Backlog</h4>
+                        <p class="news-excerpt">Efficiency measures implemented over the past year have led to significant improvements in case disposal rates.</p>
+                        <div class="news-meta">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> January 28, 2025</span>
+                            <span class="news-views"><i class="far fa-eye"></i> 163</span>
+                        </div>
+                        <div class="news-footer">
+                            <a href="news-detail.html" class="news-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            <div class="news-share">
+                                <button class="share-toggle" aria-label="Share"><i class="fas fa-share-alt"></i></button>
+                                <div class="share-dropdown">
+                                    <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" aria-label="Share via Email"><i class="fas fa-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-empty" style="display: none;">
+                <div class="empty-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>No Results Found</h3>
+                <p>We couldn't find any news matching your search criteria. Please try different keywords or browse all news.</p>
+                <button class="btn reset-search">View All News</button>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-item active">1</a>
+                <a href="#" class="page-item">2</a>
+                <a href="#" class="page-item">3</a>
+                <span class="page-ellipsis">...</span>
+                <a href="#" class="page-item">8</a>
+                <a href="#" class="page-next">Next <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter to receive the latest news and updates from the Eswatini Judiciary directly to your inbox.</p>
+                </div>
+                <div class="newsletter-form">
+                    <form id="newsletter-form">
+                        <div class="form-input">
+                            <input type="email" id="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn">Subscribe <i class="fas fa-paper-plane"></i></button>
+                        </div>
+                        <div class="form-consent">
+                            <label>
+                                <input type="checkbox" required>
+                                <span>I agree to receive news and updates from the Eswatini Judiciary</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-location">
+                        <h4>High Court of Eswatini</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Hospital Hill, Mbabane, Eswatini</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-contact">
+                        <h4>Email Us</h4>
+                        <p><a href="mailto:info@judiciary.org.sz"><i class="fas fa-envelope"></i> info@judiciary.org.sz</a></p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="footer-phone">
+                        <h4>Call Us</h4>
+                        <p><a href="tel:+26824042968"><i class="fas fa-phone-alt"></i> +268 2404 2968</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <h2>JUDICIARY<span>OF<br>ESWATINI</span></h2>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-col">
+                        <h4>Popular Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="eswatinilii.html">EswatiniLii</a></li>
+                            <li><a href="https://www.gov.sz" target="_blank">Eswatini Government</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="news.html">News</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="faqs.html">FAQs</a></li>
+                            <li><a href="help.html">Help</a></li>
+                            <li><a href="terms.html">Terms</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                            <li><a href="sitemap.html">Site Map</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4>About Us</h4>
+                        <p>The judicial power of Eswatini vests in the Judiciary. Accordingly, an organ or agency of the Crown shall not have or be conferred with final...</p>
+                        <a href="about.html" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Judiciary of Eswatini. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Featured News Slider
+            const featuredSlides = document.querySelectorAll('.featured-slide');
+            const indicators = document.querySelectorAll('.indicator');
+            const prevBtn = document.querySelector('.featured-prev');
+            const nextBtn = document.querySelector('.featured-next');
+            let currentSlide = 0;
+            
+            function showSlide(index) {
+                featuredSlides.forEach(slide => slide.classList.remove('active'));
+                indicators.forEach(indicator => indicator.classList.remove('active'));
+                
+                featuredSlides[index].classList.add('active');
+                indicators[index].classList.add('active');
+                currentSlide = index;
+            }
+            
+            if (prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', function() {
+                    currentSlide = (currentSlide - 1 + featuredSlides.length) % featuredSlides.length;
+                    showSlide(currentSlide);
+                });
+                
+                nextBtn.addEventListener('click', function() {
+                    currentSlide = (currentSlide + 1) % featuredSlides.length;
+                    showSlide(currentSlide);
+                });
+            }
+            
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', function() {
+                    showSlide(index);
+                });
+            });
+            
+            // Auto-slide
+            let slideInterval = setInterval(function() {
+                currentSlide = (currentSlide + 1) % featuredSlides.length;
+                showSlide(currentSlide);
+            }, 5000);
+            
+            // Pause auto-slide on hover
+            const sliderContainer = document.querySelector('.featured-news-slider');
+            if (sliderContainer) {
+                sliderContainer.addEventListener('mouseenter', function() {
+                    clearInterval(slideInterval);
+                });
+                
+                sliderContainer.addEventListener('mouseleave', function() {
+                    slideInterval = setInterval(function() {
+                        currentSlide = (currentSlide + 1) % featuredSlides.length;
+                        showSlide(currentSlide);
+                    }, 5000);
+                });
+            }
+            
+            // Category Filtering
+            const categoryFilters = document.querySelectorAll('.category-filter');
+            const newsCards = document.querySelectorAll('.news-card');
+            const emptyState = document.querySelector('.news-empty');
+            
+            categoryFilters.forEach(filter => {
+                filter.addEventListener('click', function() {
+                    // Update active filter
+                    categoryFilters.forEach(f => f.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    // Filter news cards
+                    let visibleCount = 0;
+                    
+                    newsCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                            visibleCount++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    
+                    // Show empty state if no results
+                    if (visibleCount === 0) {
+                        emptyState.style.display = 'block';
+                    } else {
+                        emptyState.style.display = 'none';
+                    }
+                });
+            });
+            
+            // Search Functionality
+            const searchForm = document.getElementById('search-form');
+            const searchInput = document.getElementById('news-search');
+            const resetButton = document.querySelector('.reset-search');
+            
+            if (searchForm) {
+                searchForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const searchTerm = searchInput.value.toLowerCase().trim();
+                    
+                    if (searchTerm === '') {
+                        return;
+                    }
+                    
+                    // Reset category filters
+                    categoryFilters.forEach(f => f.classList.remove('active'));
+                    document.querySelector('.category-filter[data-category="all"]').classList.add('active');
+                    
+                    // Filter news cards by search term
+                    let visibleCount = 0;
+                    
+                    newsCards.forEach(card => {
+                        const title = card.querySelector('h4').textContent.toLowerCase();
+                        const excerpt = card.querySelector('.news-excerpt').textContent.toLowerCase();
+                        const category = card.querySelector('.news-category').textContent.toLowerCase();
+                        
+                        if (title.includes(searchTerm) || excerpt.includes(searchTerm) || category.includes(searchTerm)) {
+                            card.style.display = 'block';
+                            visibleCount++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                    
+                    // Show empty state if no results
+                    if (visibleCount === 0) {
+                        emptyState.style.display = 'block';
+                    } else {
+                        emptyState.style.display = 'none';
+                    }
+                });
+            }
+            
+            if (resetButton) {
+                resetButton.addEventListener('click', function() {
+                    // Reset search
+                    searchInput.value = '';
+                    
+                    // Show all news
+                    newsCards.forEach(card => {
+                        card.style.display = 'block';
+                    });
+                    
+                    emptyState.style.display = 'none';
+                    
+                    // Reset category filters
+                    categoryFilters.forEach(f => f.classList.remove('active'));
+                    document.querySelector('.category-filter[data-category="all"]').classList.add('active');
+                });
+            }
+            
+            // Social Share Toggles
+            const shareToggles = document.querySelectorAll('.share-toggle');
+            
+            shareToggles.forEach(toggle => {
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const dropdown = this.nextElementSibling;
+                    
+                    // Close all other open dropdowns
+                    document.querySelectorAll('.share-dropdown').forEach(d => {
+                        if (d !== dropdown) {
+                            d.classList.remove('active');
+                        }
+                    });
+                    
+                    dropdown.classList.toggle('active');
+                });
+            });
+            
+            // Close share dropdowns when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.news-share')) {
+                    document.querySelectorAll('.share-dropdown').forEach(d => {
+                        d.classList.remove('active');
+                    });
+                }
+            });
+            
+            // Newsletter Form
+            const newsletterForm = document.getElementById('newsletter-form');
+            
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get email
+                    const email = document.getElementById('email').value;
+                    
+                    // Here you would typically send this to a server
+                    // For demo purposes, just show an alert
+                    alert(`Thank you for subscribing with ${email}. You will receive our newsletter soon!`);
+                    
+                    // Reset form
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

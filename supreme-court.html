@@ -48,6 +48,10 @@
                         <ul class="dropdown-menu">
                             <li><a href="high-court.html">High Court</a></li>
                             <li><a href="supreme-court.html" class="active">Supreme Court</a></li>
+                            <li><a href="industrial-court-appeal.html">Industrial Court of Appeal</a></li>
+                            <li><a href="industrial-court.html">Industrial Court</a></li>
+                            <li><a href="small-claims-court.html">Small Claims Court</a></li>
+                            <li><a href="commercial-court.html">Commercial Court</a></li>
                             <li><a href="magistrate-courts.html">Magistrate Courts</a></li>
                         </ul>
                     </li>
@@ -244,99 +248,156 @@
     </section>
 
     <!-- Appeal Process Section -->
-    <section class="appeal-process-section">
-        <div class="container">
-            <div class="section-header animate-on-scroll">
-                <h2>Understanding the Appeal Process</h2>
-                <p>How cases reach the Supreme Court and what happens when they do</p>
+    <!-- Appeal Process Section -->
+<section class="appeal-process-section">
+    <div class="container">
+        <div class="section-header animate-on-scroll">
+            <h2 class="gradient-text">Understanding the Appeal Process</h2>
+            <p>How cases reach the Supreme Court and what happens when they do</p>
+        </div>
+        
+        <div class="appeal-process-timeline">
+            <div class="timeline-wrapper">
+                <!-- Timeline Progress Bar -->
+                <div class="timeline-progress">
+                    <div class="progress-bar" id="timeline-progress-bar"></div>
+                </div>
+                
+                <!-- Timeline Steps -->
+                <div class="timeline-steps">
+                    <div class="timeline-step" data-step="1">
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">01</div>
+                                <h3>Decision in Lower Court</h3>
+                            </div>
+                            <div class="step-body">
+                                <p>The process begins with a judgment or order from the High Court (either in its original jurisdiction or from an appeal from a magistrate's court).</p>
+                            </div>
+                            <div class="step-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step" data-step="2">
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">02</div>
+                                <h3>Filing Notice of Appeal</h3>
+                            </div>
+                            <div class="step-body">
+                                <p>A party dissatisfied with the High Court decision must file a Notice of Appeal with the Registrar of the Supreme Court within strict time limits, typically 30 days from the judgment date.</p>
+                            </div>
+                            <div class="step-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step" data-step="3">
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">03</div>
+                                <h3>Record Preparation</h3>
+                            </div>
+                            <div class="step-body">
+                                <p>The Registrar prepares the appeal record, which includes all relevant documents from the lower court proceedings, transcripts, and exhibits.</p>
+                            </div>
+                            <div class="step-icon">
+                                <i class="fas fa-folder-open"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step" data-step="4">
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">04</div>
+                                <h3>Filing Written Submissions</h3>
+                            </div>
+                            <div class="step-body">
+                                <p>Both appellant and respondent file written arguments (called "heads of argument") outlining their legal positions, relevant precedents, and desired outcomes.</p>
+                            </div>
+                            <div class="step-icon">
+                                <i class="fas fa-pen-fancy"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step" data-step="5">
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">05</div>
+                                <h3>Hearing</h3>
+                            </div>
+                            <div class="step-body">
+                                <p>The appeal is heard by a panel of at least three Justices (or five for a full bench). Legal representatives present oral arguments and answer questions from the bench.</p>
+                            </div>
+                            <div class="step-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step" data-step="6">
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">06</div>
+                                <h3>Deliberation</h3>
+                            </div>
+                            <div class="step-body">
+                                <p>The Justices deliberate on the case in private, considering the written and oral arguments, lower court record, and relevant law.</p>
+                            </div>
+                            <div class="step-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-step" data-step="7">
+                        <div class="step-card">
+                            <div class="step-header">
+                                <div class="step-number">07</div>
+                                <h3>Judgment</h3>
+                            </div>
+                            <div class="step-body">
+                                <p>The Supreme Court issues its final decision, which may affirm, reverse, or modify the lower court's judgment. This decision is final and binding on all courts and persons in Eswatini.</p>
+                            </div>
+                            <div class="step-icon">
+                                <i class="fas fa-gavel"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Timeline Controls -->
+                <div class="timeline-controls">
+                    <button class="timeline-control" id="prev-step" aria-label="Previous step">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="timeline-indicators">
+                        <span class="current-step">1</span>
+                        <span class="separator">/</span>
+                        <span class="total-steps">7</span>
+                    </div>
+                    <button class="timeline-control" id="next-step" aria-label="Next step">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
             </div>
-            
-            <div class="process-steps">
-                <div class="process-step animate-on-scroll" data-delay="100">
-                    <div class="step-number">01</div>
-                    <div class="step-content">
-                        <h3>Decision in Lower Court</h3>
-                        <p>The process begins with a judgment or order from the High Court (either in its original jurisdiction or from an appeal from a magistrate's court).</p>
-                        <div class="step-icon">
-                            <i class="fas fa-landmark"></i>
-                        </div>
-                    </div>
+        </div>
+        
+        <div class="process-note animate-on-scroll" data-delay="800">
+            <div class="note-content">
+                <div class="note-icon">
+                    <i class="fas fa-info-circle"></i>
                 </div>
-                
-                <div class="process-step animate-on-scroll" data-delay="200">
-                    <div class="step-number">02</div>
-                    <div class="step-content">
-                        <h3>Filing Notice of Appeal</h3>
-                        <p>A party dissatisfied with the High Court decision must file a Notice of Appeal with the Registrar of the Supreme Court within strict time limits, typically 30 days from the judgment date.</p>
-                        <div class="step-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="process-step animate-on-scroll" data-delay="300">
-                    <div class="step-number">03</div>
-                    <div class="step-content">
-                        <h3>Record Preparation</h3>
-                        <p>The Registrar prepares the appeal record, which includes all relevant documents from the lower court proceedings, transcripts, and exhibits.</p>
-                        <div class="step-icon">
-                            <i class="fas fa-folder-open"></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="process-step animate-on-scroll" data-delay="400">
-                    <div class="step-number">04</div>
-                    <div class="step-content">
-                        <h3>Filing Written Submissions</h3>
-                        <p>Both appellant and respondent file written arguments (called "heads of argument") outlining their legal positions, relevant precedents, and desired outcomes.</p>
-                        <div class="step-icon">
-                            <i class="fas fa-pen-fancy"></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="process-step animate-on-scroll" data-delay="500">
-                    <div class="step-number">05</div>
-                    <div class="step-content">
-                        <h3>Hearing</h3>
-                        <p>The appeal is heard by a panel of at least three Justices (or five for a full bench). Legal representatives present oral arguments and answer questions from the bench.</p>
-                        <div class="step-icon">
-                            <i class="fas fa-comments"></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="process-step animate-on-scroll" data-delay="600">
-                    <div class="step-number">06</div>
-                    <div class="step-content">
-                        <h3>Deliberation</h3>
-                        <p>The Justices deliberate on the case in private, considering the written and oral arguments, lower court record, and relevant law.</p>
-                        <div class="step-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="process-step animate-on-scroll" data-delay="700">
-                    <div class="step-number">07</div>
-                    <div class="step-content">
-                        <h3>Judgment</h3>
-                        <p>The Supreme Court issues its final decision, which may affirm, reverse, or modify the lower court's judgment. This decision is final and binding on all courts and persons in Eswatini.</p>
-                        <div class="step-icon">
-                            <i class="fas fa-gavel"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="process-note animate-on-scroll" data-delay="800">
-                <i class="fas fa-info-circle"></i>
                 <p>The Supreme Court typically sits in sessions during certain periods of the year. These sessions are announced in advance to allow parties and their representatives to prepare. Emergency appeals may be heard outside the regular sessions at the discretion of the Chief Justice.</p>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Legal Significance Section -->
     <section class="legal-significance-section">
         <div class="container">
@@ -389,10 +450,14 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
+        <!-- FAQ Section -->
     <section class="faq-section">
+        <div class="faq-backdrop"></div>
         <div class="container">
             <div class="section-header animate-on-scroll">
+                <div class="faq-icon-wrapper">
+                    <i class="fas fa-question-circle"></i>
+                </div>
                 <h2>Frequently Asked Questions</h2>
                 <p>Common questions about the Supreme Court of Eswatini</p>
             </div>
@@ -402,144 +467,220 @@
                     <!-- FAQ Item 1 -->
                     <div class="faq-item animate-on-scroll" data-delay="100">
                         <div class="faq-question" aria-expanded="false">
-                            <h3>How often does the Supreme Court sit?</h3>
+                            <div class="question-content">
+                                <div class="question-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <h3>How often does the Supreme Court sit?</h3>
+                            </div>
                             <div class="question-toggle">
-                                <i class="fas fa-plus" aria-hidden="true"></i>
+                                <i class="fas fa-chevron-down" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="faq-answer" aria-hidden="true">
-                            <p>The Supreme Court typically sits in sessions or "terms" throughout the year, usually quarterly. The exact dates are announced by the Chief Justice. These sessions may last for several weeks, during which multiple appeals are heard. In cases of urgency, special sittings may be arranged outside the regular sessions.</p>
-                        </div>
-                            <p>The Supreme Court typically sits in sessions or "terms" throughout the year, usually quarterly. The exact dates are announced by the Chief Justice. These sessions may last for several weeks, during which multiple appeals are heard. In cases of urgency, special sittings may be arranged outside the regular sessions.</p>
+                            <div class="answer-content">
+                                <p>The Supreme Court typically sits in sessions or "terms" throughout the year, usually quarterly. The exact dates are announced by the Chief Justice. These sessions may last for several weeks, during which multiple appeals are heard. In cases of urgency, special sittings may be arranged outside the regular sessions.</p>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- FAQ Item 2 -->
                     <div class="faq-item animate-on-scroll" data-delay="200">
                         <div class="faq-question" aria-expanded="false">
-                            <h3>Can anyone appeal to the Supreme Court?</h3>
+                            <div class="question-content">
+                                <div class="question-icon">
+                                    <i class="fas fa-gavel"></i>
+                                </div>
+                                <h3>Can anyone appeal to the Supreme Court?</h3>
+                            </div>
                             <div class="question-toggle">
-                                <i class="fas fa-plus" aria-hidden="true"></i>
+                                <i class="fas fa-chevron-down" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="faq-answer" aria-hidden="true">
-                            <p>Not all cases can be appealed to the Supreme Court. Generally, a person must first have exhausted appeals at the High Court level. In some instances, leave (permission) to appeal may be required. Appeals are typically limited to questions of law rather than reassessment of factual findings. Additionally, there are strict time limits for filing appeals.</p>
+                            <div class="answer-content">
+                                <p>Not all cases can be appealed to the Supreme Court. Generally, a person must first have exhausted appeals at the High Court level. In some instances, leave (permission) to appeal may be required. Appeals are typically limited to questions of law rather than reassessment of factual findings. Additionally, there are strict time limits for filing appeals.</p>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- FAQ Item 3 -->
                     <div class="faq-item animate-on-scroll" data-delay="300">
                         <div class="faq-question" aria-expanded="false">
-                            <h3>How long does it take for the Supreme Court to decide a case?</h3>
+                            <div class="question-content">
+                                <div class="question-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h3>How long does it take for the Supreme Court to decide a case?</h3>
+                            </div>
                             <div class="question-toggle">
-                                <i class="fas fa-plus" aria-hidden="true"></i>
+                                <i class="fas fa-chevron-down" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="faq-answer" aria-hidden="true">
-                            <p>The time frame varies depending on the complexity of the case, the court's schedule, and other factors. Some judgments may be delivered immediately after the hearing, while others, especially in complex matters, might be "reserved," with the written judgment issued weeks or months later. The Court strives to deliver judgments within a reasonable time to ensure justice is not delayed.</p>
+                            <div class="answer-content">
+                                <p>The time frame varies depending on the complexity of the case, the court's schedule, and other factors. Some judgments may be delivered immediately after the hearing, while others, especially in complex matters, might be "reserved," with the written judgment issued weeks or months later. The Court strives to deliver judgments within a reasonable time to ensure justice is not delayed.</p>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- FAQ Item 4 -->
                     <div class="faq-item animate-on-scroll" data-delay="400">
                         <div class="faq-question" aria-expanded="false">
-                            <h3>Are Supreme Court hearings open to the public?</h3>
+                            <div class="question-content">
+                                <div class="question-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3>Are Supreme Court hearings open to the public?</h3>
+                            </div>
                             <div class="question-toggle">
-                                <i class="fas fa-plus" aria-hidden="true"></i>
+                                <i class="fas fa-chevron-down" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="faq-answer" aria-hidden="true">
-                            <p>Yes, Supreme Court hearings are generally open to the public as part of the principle of open justice. However, in exceptional circumstances, the Court may order closed proceedings if necessary for justice, national security, public morality, or the protection of vulnerable persons. Advance notice of upcoming cases is typically published, and interested members of the public can attend hearings as observers.</p>
+                            <div class="answer-content">
+                                <p>Yes, Supreme Court hearings are generally open to the public as part of the principle of open justice. However, in exceptional circumstances, the Court may order closed proceedings if necessary for justice, national security, public morality, or the protection of vulnerable persons. Advance notice of upcoming cases is typically published, and interested members of the public can attend hearings as observers.</p>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- FAQ Item 5 -->
                     <div class="faq-item animate-on-scroll" data-delay="500">
                         <div class="faq-question" aria-expanded="false">
-                            <h3>What happens if the Supreme Court Justices disagree?</h3>
+                            <div class="question-content">
+                                <div class="question-icon">
+                                    <i class="fas fa-balance-scale"></i>
+                                </div>
+                                <h3>What happens if the Supreme Court Justices disagree?</h3>
+                            </div>
                             <div class="question-toggle">
-                                <i class="fas fa-plus" aria-hidden="true"></i>
+                                <i class="fas fa-chevron-down" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="faq-answer" aria-hidden="true">
-                            <p>When Justices disagree, decisions are made by majority vote. Each Justice may write their own judgment, resulting in a majority opinion and one or more dissenting opinions. While the majority opinion becomes the binding decision, dissenting opinions are also published and form part of the legal record. These dissents can be influential in the development of the law over time and may inform future cases.</p>
+                            <div class="answer-content">
+                                <p>When Justices disagree, decisions are made by majority vote. Each Justice may write their own judgment, resulting in a majority opinion and one or more dissenting opinions. While the majority opinion becomes the binding decision, dissenting opinions are also published and form part of the legal record. These dissents can be influential in the development of the law over time and may inform future cases.</p>
+                            </div>
                         </div>
                     </div>
                     
                     <!-- FAQ Item 6 -->
                     <div class="faq-item animate-on-scroll" data-delay="600">
                         <div class="faq-question" aria-expanded="false">
-                            <h3>Where can I find Supreme Court judgments?</h3>
+                            <div class="question-content">
+                                <div class="question-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <h3>Where can I find Supreme Court judgments?</h3>
+                            </div>
                             <div class="question-toggle">
-                                <i class="fas fa-plus" aria-hidden="true"></i>
+                                <i class="fas fa-chevron-down" aria-hidden="true"></i>
                             </div>
                         </div>
                         <div class="faq-answer" aria-hidden="true">
-                            <p>Supreme Court judgments are public documents and are officially published in the Eswatini Law Reports. They may also be available through the Judiciary website, legal databases, the High Court Registry, and law libraries. Recent and significant judgments are sometimes summarized in press releases issued by the Judiciary. Legal practitioners can access the full text of judgments through their professional networks and resources.</p>
+                            <div class="answer-content">
+                                <p>Supreme Court judgments are public documents and are officially published in the Eswatini Law Reports. They may also be available through the Judiciary website, legal databases, the High Court Registry, and law libraries. Recent and significant judgments are sometimes summarized in press releases issued by the Judiciary. Legal practitioners can access the full text of judgments through their professional networks and resources.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
+    </section>  
     <!-- Contact Information Section -->
     <section class="court-contact-section">
+        <div class="contact-backdrop"></div>
         <div class="container">
+            <div class="section-header animate-on-scroll">
+                <div class="contact-icon-wrapper">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h2>Contact the Supreme Court</h2>
+                <p>For inquiries about appeal procedures, court sessions, or other information</p>
+            </div>
+            
             <div class="contact-container">
-                <div class="contact-card animate-on-scroll">
-                    <div class="contact-info">
-                        <h2>Contact the Supreme Court</h2>
-                        <p>For inquiries about appeal procedures, court sessions, or other information</p>
-                        
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
+                <div class="contact-grid">
+                    <div class="contact-info-card animate-on-scroll" data-delay="100">
+                        <div class="contact-info-content">
+                            <div class="contact-details">
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h3>Visit Us</h3>
+                                        <p>Supreme Court of Eswatini<br>Hospital Hill, Mbabane<br>Kingdom of Eswatini</p>
+                                    </div>
                                 </div>
-                                <div class="contact-text">
-                                    <h3>Address</h3>
-                                    <p>Supreme Court of Eswatini<br>Hospital Hill, Mbabane<br>Kingdom of Eswatini</p>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h3>Call Us</h3>
+                                        <div class="contact-links">
+                                            <a href="tel:+26824042506" class="phone-link">
+                                                <span>+268 2404 2506</span>
+                                                <i class="fas fa-phone"></i>
+                                            </a>
+                                            <a href="tel:+26824042081" class="phone-link">
+                                                <span>+268 2404 2081</span>
+                                                <small>(Registrar)</small>
+                                                <i class="fas fa-phone"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h3>Email Us</h3>
+                                        <a href="mailto:supremecourt@judiciary.org.sz" class="email-link">
+                                            <span>supremecourt@judiciary.org.sz</span>
+                                            <i class="fas fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h3>Registry Hours</h3>
+                                        <div class="hours-display">
+                                            <span class="day-range">Monday - Friday</span>
+                                            <span class="time-range">8:30 AM - 4:30 PM</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone-alt"></i>
-                                </div>
-                                <div class="contact-text">
-                                    <h3>Phone</h3>
-                                    <p><a href="tel:+26824042506">+268 2404 2506</a><br>
-                                    <a href="tel:+26824042081">+268 2404 2081</a> (Registrar)</p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-text">
-                                    <h3>Email</h3>
-                                    <p><a href="mailto:supremecourt@judiciary.org.sz">supremecourt@judiciary.org.sz</a></p>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-clock"></i>
-                                </div>
-                                <div class="contact-text">
-                                    <h3>Registry Hours</h3>
-                                    <p>Monday to Friday<br>8:30 AM - 4:30 PM</p>
-                                </div>
-                            </div>
+                            <a href="contact.html" class="contact-cta">
+                                <span>Get in Touch</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
                         </div>
-                        
-                        <a href="contact.html" class="btn contact-btn">Contact Us <i class="fas fa-arrow-right"></i></a>
                     </div>
                     
-                    <div class="contact-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14390.204617426927!2d31.130000!3d-26.31667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8449a5e6de6c7%3A0xee9b1a7c3953e0ac!2sHigh%20Court%20of%20Eswatini!5e0!3m2!1sen!2s!4v1605001234567!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Map to Supreme Court of Eswatini"></iframe>
+                    <div class="contact-map-card animate-on-scroll" data-delay="200">
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14390.204617426927!2d31.130000!3d-26.31667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8449a5e6de6c7%3A0xee9b1a7c3953e0ac!2sHigh%20Court%20of%20Eswatini!5e0!3m2!1sen!2s!4v1605001234567!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Map to Supreme Court of Eswatini"></iframe>
+                        </div>
+                        <div class="map-overlay">
+                            <div class="location-marker">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="location-details">
+                                <h3>Supreme Court of Eswatini</h3>
+                                <p>Hospital Hill, Mbabane</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

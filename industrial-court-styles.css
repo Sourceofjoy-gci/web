@@ -1,0 +1,696 @@
+/* Industrial Court of Appeal Specific Styles */
+:root {
+    --industrial-gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    --industrial-accent: #e94560;
+    --industrial-text: #f1f1f1;
+    --industrial-secondary: #536878;
+    --industrial-highlight: #4cc9f0;
+}
+
+/* Hero Section - Enhanced modern design */
+.industrial-court-hero {
+    background-image: var(--industrial-gradient-dark), url('../images/industrial-court.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.industrial-court-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 26, 46, 0.95) 0%, rgba(22, 33, 62, 0.85) 50%, rgba(15, 52, 96, 0.95) 100%);
+    z-index: 1;
+}
+
+.industrial-court-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 40%, rgba(233, 69, 96, 0.1) 0%, transparent 50%);
+    z-index: 2;
+}
+
+.industrial-court-hero .container {
+    position: relative;
+    z-index: 3;
+}
+
+.industrial-court-hero .court-hero-content {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.industrial-court-hero .court-badge {
+    background: linear-gradient(135deg, var(--industrial-accent), #f73859);
+    color: var(--industrial-text);
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 0.2s;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.industrial-court-hero .court-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+    animation: shimmer 3s infinite;
+}
+
+.industrial-court-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--industrial-text);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards 0.4s;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+}
+
+.industrial-court-hero p {
+    font-size: 1.3rem;
+    color: var(--industrial-text);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards 0.6s;
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .industrial-court-hero {
+        min-height: 450px;
+    }
+
+    .industrial-court-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .industrial-court-hero p {
+        font-size: 1.1rem;
+    }
+
+    .industrial-court-hero .court-badge {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .industrial-court-hero {
+        min-height: 400px;
+    }
+
+    .industrial-court-hero h1 {
+        font-size: 2rem;
+    }
+
+    .industrial-court-hero p {
+        font-size: 1rem;
+    }
+}
+
+/* History Section - Build on existing court-history-section */
+.industrial-history-section {
+    background-color: #271188;
+    padding: 70px 0;
+}
+
+.industrial-history-section .history-container {
+    position: relative;
+    background: #121823;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Role Section - Unique styles to avoid conflicts */
+.industrial-role-section {
+    background: var(--industrial-gradient-dark);
+    color: var(--industrial-text);
+    padding: 80px 0;
+}
+
+.industrial-role-section .role-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.industrial-role-section .role-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--industrial-highlight);
+}
+
+.industrial-role-section .role-icon {
+    background: var(--industrial-accent);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Composition Section - Unique styles to avoid conflicts */
+.industrial-composition-section {
+    background: var(--industrial-gradient-dark);
+    color: var(--industrial-text);
+    padding: 80px 0;
+}
+
+.industrial-composition-section .composition-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+}
+
+/* Judge Cards - Unique styling */
+.judge-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.judge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.judge-image {
+    height: 200px;
+    background: #2a2a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.judge-image i {
+    font-size: 64px;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.judge-info {
+    padding: 20px;
+}
+
+.judge-info h3 {
+    margin-top: 0;
+    color: var(--industrial-highlight);
+}
+
+/* Appeal Process Section - Unique timeline to avoid conflicts */
+.industrial-appeal-process {
+    background: #090d42;
+    padding: 80px 0;
+}
+
+/* Create a unique industrial timeline that doesn't conflict */
+.industrial-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.industrial-timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--industrial-secondary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 10px;
+}
+
+.industrial-timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.industrial-timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid var(--industrial-accent);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-left {
+    left: 0;
+}
+
+.timeline-right {
+    left: 50%;
+}
+
+.timeline-right::after {
+    left: -13px;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: rgb(6, 26, 82);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: var(--industrial-accent);
+}
+
+/* Industrial Court Contact Section Styles */
+.industrial-contact-section {
+    background: var(--industrial-gradient-dark);
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.industrial-contact-section::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(76, 201, 240, 0.1) 0%, rgba(76, 201, 240, 0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.industrial-contact-section::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(233, 69, 96, 0.1) 0%, rgba(233, 69, 96, 0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.industrial-contact-container {
+    position: relative;
+    z-index: 1;
+}
+
+.industrial-contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.industrial-contact-info {
+    padding: 40px;
+}
+
+.industrial-contact-header {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.industrial-contact-header::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background: var(--industrial-accent);
+    border-radius: 3px;
+}
+
+.industrial-contact-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.industrial-contact-header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.industrial-contact-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.industrial-contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.industrial-contact-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--industrial-highlight);
+}
+
+.industrial-contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--industrial-accent);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+}
+
+.industrial-contact-card:hover::before {
+    transform: scaleY(1);
+}
+
+.industrial-contact-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--industrial-gradient-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.industrial-contact-card-icon i {
+    font-size: 20px;
+    color: var(--industrial-highlight);
+}
+
+.industrial-contact-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.industrial-contact-card p, 
+.industrial-contact-card a {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.industrial-contact-card a:hover {
+    color: var(--industrial-highlight);
+}
+
+.industrial-direct-contact {
+    margin-top: 30px;
+    background: linear-gradient(135deg, rgba(233, 69, 96, 0.2) 0%, rgba(76, 201, 240, 0.2) 100%);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.industrial-direct-contact-text {
+    flex: 1;
+}
+
+.industrial-direct-contact-text h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.industrial-direct-contact-text p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.industrial-direct-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    background: var(--industrial-accent);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid var(--industrial-accent);
+}
+
+.industrial-direct-contact-btn i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.industrial-direct-contact-btn:hover {
+    background: transparent;
+    color: white;
+}
+
+.industrial-direct-contact-btn:hover i {
+    transform: translateX(3px);
+}
+
+.industrial-contact-map {
+    position: relative;
+    height: 100%;
+    min-height: 400px;
+}
+
+.industrial-map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.2);
+    z-index: 1;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.industrial-contact-map:hover .industrial-map-overlay {
+    background: rgba(15, 23, 42, 0.1);
+}
+
+.industrial-location-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--industrial-accent);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.industrial-location-badge i {
+    margin-right: 6px;
+}
+
+.industrial-map-frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    border: none;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 992px) {
+    .industrial-contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .industrial-contact-map {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .industrial-contact-section {
+        padding: 60px 0;
+    }
+    
+    .industrial-contact-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .industrial-direct-contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .industrial-direct-contact-text {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .industrial-contact-info {
+        padding: 30px 20px;
+    }
+    
+    .industrial-contact-header h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Grid system that doesn't conflict with existing styles */
+.industrial-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.industrial-col-full {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.industrial-col-third {
+    position: relative;
+    width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.industrial-mt-5 {
+    margin-top: 3rem;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .industrial-timeline::after {
+        left: 31px;
+    }
+    
+    .industrial-timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .industrial-timeline-item::after {
+        left: 18px;
+    }
+    
+    .timeline-right {
+        left: 0;
+    }
+    
+    .industrial-col-third {
+        width: 100%;
+    }
+    
+    .judge-card {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,1232 @@
+/* magistrate-courts.css */
+
+/* Magistrate Courts Hero Section */
+.magistrate-courts-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/magistrate-courts.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.magistrate-courts-hero .court-hero-overlay {
+    background: linear-gradient(135deg, rgba(18, 18, 18, 0.9) 0%, rgba(30, 30, 30, 0.8) 50%, rgba(42, 42, 42, 0.7) 100%);
+}
+
+.magistrate-courts-hero .court-badge {
+    background: var(--accent-teal);
+    color: var(--dark-primary);
+    font-weight: 600;
+}
+
+/* Overview Section */
+.overview-section {
+    background: var(--dark-secondary);
+    padding: 4rem 0;
+}
+
+.overview-container {
+    display: flex;
+    align-items: center;
+    background: var(--dark-tertiary);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-card);
+}
+
+.overview-icon {
+    margin-right: 1.5rem;
+    font-size: 2.5rem;
+    color: var(--accent-teal);
+    flex-shrink: 0;
+}
+
+.overview-content h2 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.overview-content p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/* Magistrate Composition Section */
+.magistrate-composition {
+    background: var(--dark-primary);
+    padding: 6rem 0;
+}
+
+.magistrate-composition-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.magistrate-hierarchy {
+    background: var(--gradient-dark);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-card);
+    height: 100%;
+}
+
+.principal-position {
+    background: var(--dark-accent);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    box-shadow: var(--shadow-elevation);
+    transition: var(--transition-standard);
+}
+
+.principal-position::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1.5rem;
+    background: var(--accent-teal);
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.senior-position {
+    background: var(--dark-tertiary);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    box-shadow: var(--shadow-elevation);
+    transition: var(--transition-standard);
+}
+
+.senior-position::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1.5rem;
+    background: var(--accent-blue);
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.magistrate-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto 1rem;
+    transition: var(--transition-standard);
+}
+
+.magistrate-icon.principal {
+    background: var(--accent-teal);
+    color: var(--dark-primary);
+}
+
+.magistrate-icon.senior {
+    background: var(--accent-purple);
+}
+
+.principal-position:hover,
+.senior-position:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.principal-position:hover .magistrate-icon,
+.senior-position:hover .magistrate-icon {
+    transform: scale(1.1);
+}
+
+.principal-position h3,
+.senior-position h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.principal-position p,
+.senior-position p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.magistrates-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.magistrate-position {
+    background: var(--dark-tertiary);
+    border-radius: var(--border-radius);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    flex: 1;
+    box-shadow: var(--shadow-elevation);
+    transition: var(--transition-standard);
+}
+
+.magistrate-position:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.magistrate-position:hover .magistrate-icon {
+    transform: scale(1.1);
+}
+
+.magistrate-position h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.magistrate-position p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.magistrate-level {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--dark-accent);
+    border-radius: var(--border-radius);
+    transition: var(--transition-standard);
+}
+
+.magistrate-level:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-elevation);
+}
+
+.level-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.level-icon.principal {
+    background: var(--accent-teal);
+    color: var(--dark-primary);
+}
+
+.level-icon.senior {
+    background: var(--accent-purple);
+}
+
+.level-details h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.level-details p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.appointment-note {
+    margin-top: 2rem;
+    background: rgba(3, 218, 198, 0.1);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    border-left: 4px solid var(--accent-teal);
+}
+
+.appointment-note .note-icon {
+    color: var(--accent-teal);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.appointment-note .note-content h4 {
+    color: var(--accent-teal);
+    margin-bottom: 0.5rem;
+}
+
+.appointment-note .note-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Jurisdiction Section with Tabs */
+.jurisdiction-section {
+    background: var(--dark-secondary);
+    padding: 6rem 0;
+}
+
+.jurisdiction-tabs {
+    margin-top: 3rem;
+}
+
+.tabs-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--dark-accent);
+    padding-bottom: 0.5rem;
+}
+
+.tab-button {
+    background: transparent;
+    border: none;
+    padding: 1rem 1.5rem;
+    margin: 0 0.5rem;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition-standard);
+}
+
+.tab-button::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--accent-teal);
+    transition: var(--transition-standard);
+}
+
+.tab-button:hover {
+    color: var(--text-primary);
+}
+
+.tab-button.active {
+    color: var(--accent-teal);
+}
+
+.tab-button.active::after {
+    width: 100%;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.jurisdiction-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--dark-tertiary);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-card);
+}
+
+.jurisdiction-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--dark-accent);
+    color: var(--accent-teal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.jurisdiction-details {
+    width: 100%;
+}
+
+.jurisdiction-details h3 {
+    text-align: center;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.jurisdiction-details > p {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.case-item {
+    background: var(--dark-accent);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition-standard);
+}
+
+.case-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-elevation);
+}
+
+.case-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--dark-primary);
+    color: var(--accent-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 auto 1rem;
+    transition: var(--transition-standard);
+}
+
+.case-item:hover .case-icon {
+    background: var(--accent-blue);
+    color: var(--text-primary);
+}
+
+.case-item h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.case-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.sentencing-powers,
+.monetary-limits {
+    background: rgba(59, 89, 254, 0.1);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent-blue);
+}
+
+.sentencing-powers h4,
+.monetary-limits h4 {
+    color: var(--accent-blue);
+    margin-bottom: 1rem;
+}
+
+.sentencing-powers p,
+.monetary-limits p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.sentencing-powers ul,
+.monetary-limits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sentencing-powers ul li,
+.monetary-limits ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.sentencing-powers ul li i,
+.monetary-limits ul li i {
+    color: var(--accent-blue);
+    margin-right: 0.75rem;
+}
+
+/* Limitations Styling */
+.limitations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.limitation-item {
+    background: var(--dark-accent);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    transition: var(--transition-standard);
+}
+
+.limitation-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-elevation);
+}
+
+.limitation-item.wide {
+    grid-column: 1 / -1;
+}
+
+.limitation-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.limitation-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    transition: var(--transition-standard);
+}
+
+.limitation-icon.swazi {
+    background: var(--accent-amber);
+    color: var(--dark-primary);
+}
+
+.limitation-icon.industrial {
+    background: var(--accent-purple);
+    color: var(--text-primary);
+}
+
+.limitation-icon.high {
+    background: var(--accent-blue);
+    color: var(--text-primary);
+}
+
+.limitation-icon.monetary {
+    background: var(--accent-teal);
+    color: var(--dark-primary);
+}
+
+.limitation-item:hover .limitation-icon {
+    transform: scale(1.1);
+}
+
+.limitation-header h4 {
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.limitation-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.jurisdictional-note {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 171, 64, 0.1);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent-amber);
+}
+
+.jurisdictional-note .note-icon {
+    color: var(--accent-amber);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.jurisdictional-note .note-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Appeal Process Section */
+.appeal-process-section {
+    background: var(--dark-primary);
+    padding: 6rem 0;
+}
+
+.appeal-process-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.appeal-flow {
+    background: var(--gradient-dark);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-card);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.appeal-step {
+    display: flex;
+    background: var(--dark-tertiary);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    width: 100%;
+    transition: var(--transition-standard);
+    position: relative;
+}
+
+.appeal-step:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-elevation);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-blue);
+    color: var(--text-primary);
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.appeal-step.final .step-number {
+    background: var(--accent-teal);
+    color: var(--dark-primary);
+}
+
+.step-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.step-content h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.step-content p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.step-icon {
+    align-self: flex-end;
+    width: 40px;
+    height: 40px;
+    background: var(--dark-accent);
+    color: var(--accent-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: var(--transition-standard);
+}
+
+.appeal-step:hover .step-icon {
+    background: var(--accent-blue);
+    color: var(--text-primary);
+    transform: rotate(360deg);
+}
+
+.appeal-step.final:hover .step-icon {
+    background: var(--accent-teal);
+    color: var(--dark-primary);
+}
+
+.flow-arrow {
+    font-size: 2rem;
+    color: var(--accent-blue);
+    margin: 1rem 0;
+}
+
+.appeal-card {
+    background: var(--gradient-dark);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: var(--shadow-card);
+    height: 100%;
+}
+
+.appeal-card h3 {
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+}
+
+.appeal-card > p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+.appeal-aspects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.aspect {
+    display: flex;
+    align-items: flex-start;
+    background: var(--dark-tertiary);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    transition: var(--transition-standard);
+}
+
+.aspect:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-elevation);
+}
+
+.aspect-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--dark-accent);
+    color: var(--accent-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    transition: var(--transition-standard);
+}
+
+.aspect:hover .aspect-icon {
+    background: var(--accent-blue);
+    color: var(--text-primary);
+    transform: rotate(360deg);
+}
+
+.aspect-details h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.aspect-details p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.appeal-note {
+    display: flex;
+    align-items: center;
+    background: rgba(59, 89, 254, 0.1);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent-blue);
+}
+
+.appeal-note i {
+    color: var(--accent-blue);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.appeal-note p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Locations Section */
+.locations-section {
+    background: var(--dark-secondary);
+    padding: 6rem 0;
+}
+
+.location-map-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.location-map {
+    background: var(--gradient-dark);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--shadow-card);
+    height: 100%;
+    position: relative;
+}
+
+.eswatini-map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+.map-marker {
+    position: absolute;
+    cursor: pointer;
+    transition: var(--transition-standard);
+}
+
+.map-marker i {
+    font-size: 2rem;
+    color: var(--dark-tertiary);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+    transition: var(--transition-standard);
+}
+
+.map-marker.active i,
+.map-marker:hover i {
+    color: var(--accent-teal);
+    transform: scale(1.2);
+}
+
+.marker-label {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background: var(--dark-primary);
+    color: var(--text-primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: var(--transition-standard);
+}
+
+.map-marker.active .marker-label,
+.map-marker:hover .marker-label {
+    opacity: 1;
+}
+
+/* Hardcoded positions for map markers - would be properly positioned in a real implementation */
+.map-marker.mbabane {
+    top: 30%;
+    left: 40%;
+}
+
+.map-marker.manzini {
+    top: 50%;
+    left: 45%;
+}
+
+.map-marker.nhlangano {
+    top: 70%;
+    left: 35%;
+}
+
+.map-marker.hluthi {
+    top: 80%;
+    left: 30%;
+}
+
+.map-marker.siteki {
+    top: 45%;
+    left: 70%;
+}
+
+.map-marker.simunye {
+    top: 35%;
+    left: 75%;
+}
+
+.map-marker.piggs-peak {
+    top: 15%;
+    left: 35%;
+}
+
+.location-details {
+    background: var(--gradient-dark);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+}
+
+.location-tabs {
+    display: flex;
+    overflow-x: auto;
+    background: var(--dark-tertiary);
+    border-bottom: 1px solid var(--dark-accent);
+}
+
+.location-tabs::-webkit-scrollbar {
+    height: 4px;
+}
+
+.location-tabs::-webkit-scrollbar-track {
+    background: var(--dark-tertiary);
+}
+
+.location-tabs::-webkit-scrollbar-thumb {
+    background: var(--dark-accent);
+    border-radius: 4px;
+}
+
+.location-tab {
+    flex: 1;
+    min-width: auto;
+    white-space: nowrap;
+    background: transparent;
+    border: none;
+    padding: 1rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-standard);
+    position: relative;
+}
+
+.location-tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--accent-teal);
+    transition: var(--transition-standard);
+}
+
+.location-tab:hover {
+    color: var(--text-primary);
+}
+
+.location-tab.active {
+    color: var(--accent-teal);
+}
+
+.location-tab.active::after {
+    width: 100%;
+}
+
+.location-info-container {
+    padding: 2rem;
+}
+
+.location-info {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.location-info.active {
+    display: block;
+}
+
+.location-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.location-header h3 {
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.location-badge {
+    background: var(--accent-blue);
+    color: var(--text-primary);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.location-badge.principal {
+    background: var(--accent-teal);
+    color: var(--dark-primary);
+}
+
+.location-badge.senior {
+    background: var(--accent-purple);
+}
+
+.location-address,
+.location-contact,
+.location-hours,
+.location-magistrates {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.location-address i,
+.location-contact i,
+.location-hours i,
+.location-magistrates i {
+    color: var(--accent-teal);
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    width: 20px;
+    text-align: center;
+}
+
+.location-address p,
+.location-hours p,
+.location-magistrates p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.location-contact a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition-standard);
+}
+
+.location-contact a:hover {
+    color: var(--accent-teal);
+}
+
+.location-directions {
+    display: inline-flex;
+    align-items: center;
+    background: var(--accent-teal);
+    color: var(--dark-primary);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: var(--transition-standard);
+}
+
+.location-directions i {
+    margin-right: 0.5rem;
+}
+
+.location-directions:hover {
+    background: var(--dark-primary);
+    color: var(--accent-teal);
+    box-shadow: 0 0 0 2px var(--accent-teal);
+}
+
+/* Magistrate FAQ Section */
+.magistrate-faq {
+    background: var(--dark-primary);
+}
+
+/* Magistrate Contact Section */
+.magistrate-contact .contact-card {
+    background: var(--gradient-dark);
+}
+
+.magistrate-contact .contact-icon {
+    background: var(--accent-teal);
+    color: var(--dark-primary);
+}
+
+.magistrate-contact .contact-btn.primary-btn {
+    background: var(--accent-teal);
+    color: var(--dark-primary);
+}
+
+.magistrate-contact .contact-btn.primary-btn:hover {
+    background: var(--dark-primary);
+    color: var(--accent-teal);
+    box-shadow: 0 0 0 2px var(--accent-teal);
+}
+
+.magistrate-contact .contact-btn.secondary-btn {
+    background: transparent;
+    color: var(--accent-blue);
+    border: 2px solid var(--accent-blue);
+}
+
+.magistrate-contact .contact-btn.secondary-btn:hover {
+    background: var(--accent-blue);
+    color: var(--text-primary);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .magistrate-composition-grid,
+    .appeal-process-container,
+    .location-map-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .composition-visual,
+    .appeal-visual {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .tabs-navigation {
+        flex-wrap: wrap;
+    }
+    
+    .magistrates-row {
+        flex-wrap: wrap;
+    }
+    
+    .magistrate-position {
+        flex: 1 1 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .overview-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .overview-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .appointment-note,
+    .jurisdictional-note,
+    .appeal-note {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .appointment-note .note-icon,
+    .jurisdictional-note .note-icon,
+    .appeal-note i {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .limitation-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .limitation-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .aspect {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .aspect-icon {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .location-address,
+    .location-contact,
+    .location-hours,
+    .location-magistrates {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .location-address i,
+    .location-contact i,
+    .location-hours i,
+    .location-magistrates i {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .location-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .location-header h3 {
+        margin-bottom: 0.5rem;
+    }
+    
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 576px) {
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .tab-button {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .magistrate-courts-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .jurisdiction-content {
+        padding: 1.5rem;
+    }
+    
+    .appeal-step {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-number {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .step-icon {
+        align-self: center;
+        margin-top: 1rem;
+    }
+}
+

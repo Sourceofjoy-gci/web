@@ -4727,3 +4727,729 @@ footer {
         font-size: 20px;
     }
 }
+
+/* Supreme Court Specific Styles */
+
+/* Hero Section */
+.supreme-court-hero {
+    background-image: url('/api/placeholder/1600/800');
+    background-position: center 25%;
+}
+
+/* History Section */
+.court-history-section {
+    background-color: var(--primary-light);
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.court-history-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.history-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.history-year-badge {
+    display: inline-block;
+    background: var(--accent-blue);
+    color: var(--text-light);
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+    position: relative;
+}
+
+.history-year-badge::before,
+.history-year-badge::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 1px;
+    background: var(--accent-blue);
+}
+
+.history-year-badge::before {
+    left: -50px;
+}
+
+.history-year-badge::after {
+    right: -50px;
+}
+
+.history-container h2 {
+    font-size: 36px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.history-container p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.history-quote {
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    padding: 30px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: var(--border-radius);
+}
+
+.history-quote i {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    color: var(--accent-blue);
+    opacity: 0.3;
+}
+
+.history-quote blockquote {
+    font-size: 18px;
+    font-style: italic;
+    color: var(--text-light);
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
+
+/* Supreme Court Role Section */
+.supreme-role-section {
+    background-color: var(--primary-dark);
+    padding: 80px 0;
+    position: relative;
+}
+
+.supreme-role-section::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.role-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.role-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.role-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-accent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.role-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.role-card:hover::before {
+    opacity: 1;
+}
+
+.role-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-accent);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+}
+
+.role-card h3 {
+    font-size: 22px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.role-card p {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.role-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.role-details span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.role-details span i {
+    color: var(--accent-blue);
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Composition Section */
+.composition-section {
+    background-color: var(--primary-light);
+    padding: 80px 0;
+}
+
+.composition-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.composition-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.court-structure {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.chief-justice-position {
+    text-align: center;
+    padding: 30px;
+    background: rgba(59, 130, 246, 0.15);
+    border-radius: var(--border-radius);
+    margin-bottom: 30px;
+}
+
+.justice-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--gradient-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin: 0 auto 15px;
+}
+
+.chief-justice-position h3 {
+    font-size: 20px;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.chief-justice-position p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.justices-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.justice-position {
+    text-align: center;
+}
+
+.justice-position .justice-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.justice-position span {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.composition-note {
+    text-align: center;
+    padding: 15px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: var(--border-radius);
+}
+
+.composition-note p {
+    margin: 0;
+    color: var(--accent-blue);
+    font-weight: 500;
+}
+
+.composition-details {
+    display: flex;
+    align-items: center;
+}
+
+.composition-card {
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.composition-card h3 {
+    font-size: 22px;
+    color: var(--accent-blue);
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.composition-card p {
+    font-size: 16px;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.composition-list {
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.composition-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.composition-list li i {
+    color: var(--accent-blue);
+    margin-right: 10px;
+}
+
+.sitting-info {
+    display: flex;
+    align-items: center;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.sitting-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.sitting-info p {
+    margin: 0;
+    color: var(--text-light);
+}
+
+.presiding-info {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+.presiding-info p {
+    margin-bottom: 10px;
+}
+
+.presiding-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Appeal Process Section */
+.appeal-process-section {
+    background-color: var(--primary-dark);
+    padding: 80px 0;
+}
+
+.process-steps {
+    max-width: 800px;
+    margin: 50px auto 30px;
+    position: relative;
+}
+
+.process-steps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    width: 2px;
+    background: var(--accent-blue);
+    z-index: 0;
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.process-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 30px;
+    flex-shrink: 0;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.step-content {
+    flex: 1;
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.step-content h3 {
+    font-size: 20px;
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+}
+
+.step-content p {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.step-icon {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 40px;
+    color: var(--accent-blue);
+    opacity: 0.15;
+}
+
+.process-note {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.process-note i {
+    color: var(--accent-blue);
+    font-size: 20px;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+.process-note p {
+    flex: 1;
+    margin: 0;
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* Legal Significance Section */
+.legal-significance-section {
+    background-color: var(--primary-light);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.legal-significance-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(59, 130, 246, 0) 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.significance-content {
+    position: relative;
+    z-index: 1;
+}
+
+.significance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.significance-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.significance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.significance-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--accent-blue);
+}
+
+.significance-card h3 {
+    font-size: 20px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.significance-card p {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin: 0;
+    line-height: 1.7;
+}
+
+.significance-quote {
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding: 30px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: var(--border-radius);
+    position: relative;
+}
+
+.significance-quote::before {
+    content: '\201C';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 60px;
+    font-family: 'Georgia', serif;
+    color: var(--accent-blue);
+    opacity: 0.3;
+    line-height: 1;
+}
+
+.significance-quote blockquote {
+    font-size: 18px;
+    font-style: italic;
+    color: var(--text-light);
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .composition-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .history-container h2 {
+        font-size: 32px;
+    }
+    
+    .history-quote blockquote {
+        font-size: 16px;
+    }
+    
+    .significance-quote blockquote {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .history-year-badge::before,
+    .history-year-badge::after {
+        width: 20px;
+    }
+    
+    .history-year-badge::before {
+        left: -30px;
+    }
+    
+    .history-year-badge::after {
+        right: -30px;
+    }
+    
+    .history-container h2 {
+        font-size: 28px;
+    }
+    
+    .history-container p {
+        font-size: 15px;
+    }
+    
+    .justices-row {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .justice-position {
+        flex: 0 0 calc(50% - 10px);
+    }
+    
+    .step-content {
+        padding: 20px;
+    }
+    
+    .step-icon {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .history-year-badge {
+        font-size: 14px;
+        padding: 6px 20px;
+    }
+    
+    .history-year-badge::before,
+    .history-year-badge::after {
+        display: none;
+    }
+    
+    .history-container h2 {
+        font-size: 24px;
+    }
+    
+    .history-quote {
+        padding: 20px 15px;
+    }
+    
+    .role-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+    
+    .role-card h3 {
+        font-size: 20px;
+    }
+    
+    .composition-card {
+        padding: 20px;
+    }
+    
+    .process-step {
+        align-items: flex-start;
+    }
+    
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        margin-right: 20px;
+    }
+    
+    .step-content h3 {
+        font-size: 18px;
+    }
+    
+    .step-icon {
+        bottom: 10px;
+        right: 10px;
+        font-size: 24px;
+    }
+    
+    .significance-card {
+        padding: 20px;
+    }
+    
+    .significance-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
